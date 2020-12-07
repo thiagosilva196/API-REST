@@ -7,8 +7,8 @@ namespace AspNetCoreWebAPI.Model
 {
     public class Usuario
     {
-        public int Id { get; set; } = 0;
-        public string Nome { get; set; } = "João";
-        public string Email { get; set; } = "joao@gmail.com";
+        public int Id { get; set; }
+        public string Nome { get; set; } 
+        public string Email { get; set; }
     }
 }

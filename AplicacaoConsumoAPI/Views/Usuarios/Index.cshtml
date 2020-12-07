@@ -7,8 +7,7 @@
 
 <h2>Adicionar um Usuario</h2>
 <div class="form-group">
-    <label for="Nome">Id:</label>
-    <input id="txtUsuarioId" class="form-control" name="Id" />
+    <input id="txtUsuarioId" class="form-control" name="Id" style="display: none;" />
 </div>
 <div class="form-group">
     <label for="Nome">Nome:</label>
@@ -64,7 +63,7 @@
 
     function Edit(usuarioId) {
         if (usuarioId > 0) {
-            $.getJSON("/Usuarios/GetById?usuarioId=" + usuarioId, function (usuarios) {
+            $.getJSON("/Usuarios/GetById?id=" + usuarioId, function (usuario) {
                 $('#txtUsuarioId').val(usuario.id);
                 $('#txtNomeUsuario').val(usuario.nome);
                 $('#txtEmailUsuario').val(usuario.email);
@@ -79,6 +78,7 @@
                 type: 'DELETE',
                 dataType: 'json',
                 success: function (data) {
+                    GetAllUsers();
                 },
                 error: function (ex) {
                     console.log('Erro na Operação');
@@ -95,7 +95,7 @@
         }
         $.post("/Usuarios/AddUpdateUser", oUsuario)
             .done(function (data) {
-                GetAllUsers
+                GetAllUsers();
             });
     });
 

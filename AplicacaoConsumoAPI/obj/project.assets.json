@@ -6074,11 +6074,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API CRUD\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI.csproj",
+      "projectUniqueName": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API-REST\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI.csproj",
       "projectName": "AplicacaoConsumoAPI",
-      "projectPath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API CRUD\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI.csproj",
+      "projectPath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API-REST\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI.csproj",
       "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API CRUD\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI\\obj\\",
+      "outputPath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API-REST\\AplicacaoConsumoAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thiag\\AppData\\Roaming\\NuGet\\NuGet.Config",

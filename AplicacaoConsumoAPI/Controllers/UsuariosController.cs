@@ -28,9 +28,8 @@ namespace AplicacaoConsumoAPI.Controllers
 
         [HttpGet]
         public async Task<List<Usuario>> GetAllUsers()
-        {
-            _oUsuarios = new List<Usuario>();
-
+        { 
+            
             using (var httpClient = new HttpClient(_clientHandler))
             {
                 using (var response = await httpClient.GetAsync("https://localhost:44393/api/Usuarios"))
@@ -44,13 +43,13 @@ namespace AplicacaoConsumoAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<Usuario> GetById(int usuarioId)
+        public async Task<Usuario> GetById(int id)
         {
             _oUsuario = new Usuario();
 
             using (var httpClient = new HttpClient(_clientHandler))
             {
-                using (var response = await httpClient.GetAsync("https://localhost:44393/api/Usuarios/" + usuarioId))
+                using (var response = await httpClient.GetAsync("https://localhost:44393/api/Usuarios/GetUsuario?id=" + id))
                 {
                     string apiResponse = await response.Content.ReadAsStringAsync();
                     _oUsuario = JsonConvert.DeserializeObject<Usuario>(apiResponse);
@@ -85,7 +84,7 @@ namespace AplicacaoConsumoAPI.Controllers
 
             using (var httpClient = new HttpClient(_clientHandler))
             {
-                using (var response = await httpClient.DeleteAsync("https://localhost:44393/api/Usuarios/" + usuarioId))
+                using (var response = await httpClient.DeleteAsync("https://localhost:44393/api/Usuarios?id=" + usuarioId))
                 {
                     message = await response.Content.ReadAsStringAsync();
                 }

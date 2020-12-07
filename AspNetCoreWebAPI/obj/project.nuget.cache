@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bxrIxgk9/Ib49e84y3cj4uTkmXFTCqmTo5O17kapdc+9bp5YJWcll4mG7TfFjzbXKRSAfz0qXX9eGosAMwNvQg==",
+  "dgSpecHash": "2D3zgMCYDNyfKck6QzhTVgiNDGPkT36xEDe7dq0JAQ3SOZ8jk8QG7Pc7OgjwdbBNvzKGni5w0+vcwzI1hfXMqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API CRUD\\AspNetCoreWebAPI\\AspNetCoreWebAPI\\AspNetCoreWebAPI.csproj",
+  "projectFilePath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API-REST\\AspNetCoreWebAPI\\AspNetCoreWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thiag\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\thiag\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

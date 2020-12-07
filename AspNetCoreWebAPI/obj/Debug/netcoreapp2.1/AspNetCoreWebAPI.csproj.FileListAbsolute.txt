@@ -16,3 +16,21 @@ C:\Users\thiag\Desktop\FACULDADE\ADID6\API CRUD\AspNetCoreWebAPI\AspNetCoreWebAP
 C:\Users\thiag\Desktop\FACULDADE\ADID6\API CRUD\AspNetCoreWebAPI\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.csproj.CoreCompileInputs.cache
 C:\Users\thiag\Desktop\FACULDADE\ADID6\API CRUD\AspNetCoreWebAPI\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.dll
 C:\Users\thiag\Desktop\FACULDADE\ADID6\API CRUD\AspNetCoreWebAPI\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.pdb
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\bin\Debug\netcoreapp2.1\AspNetCoreWebAPI.deps.json
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\bin\Debug\netcoreapp2.1\AspNetCoreWebAPI.runtimeconfig.json
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\bin\Debug\netcoreapp2.1\AspNetCoreWebAPI.runtimeconfig.dev.json
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\bin\Debug\netcoreapp2.1\AspNetCoreWebAPI.dll
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\bin\Debug\netcoreapp2.1\AspNetCoreWebAPI.pdb
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.csprojAssemblyReference.cache
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.RazorAssemblyInfo.cache
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.RazorAssemblyInfo.cs
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.AssemblyInfoInputs.cache
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.AssemblyInfo.cs
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.dll
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.pdb
+C:\Users\thiag\Desktop\FACULDADE\ADID6\API-REST\AspNetCoreWebAPI\obj\Debug\netcoreapp2.1\AspNetCoreWebAPI.genruntimeconfig.cache

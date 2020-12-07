@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Cp/GvcOnP5gYL6/JyJtK7LIvjn2tX6GoPCjfus9tRvNRbBD+cpnjFWWTefwRJCLFS99m4VfJZpPeR2QIUuWgFg==",
+  "dgSpecHash": "phLwlf5HjBRD6Z4udpHPUjcxziTitUc7WJFe1ZF1sVHG53vl4eEIdMKMyIvamnboY8ByjokSLr8PGVLdUrxoLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API CRUD\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI.csproj",
+  "projectFilePath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API-REST\\AplicacaoConsumoAPI\\AplicacaoConsumoAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thiag\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\thiag\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

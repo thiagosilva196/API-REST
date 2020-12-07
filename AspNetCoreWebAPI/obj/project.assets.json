@@ -12627,11 +12627,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API CRUD\\AspNetCoreWebAPI\\AspNetCoreWebAPI\\AspNetCoreWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API-REST\\AspNetCoreWebAPI\\AspNetCoreWebAPI.csproj",
       "projectName": "AspNetCoreWebAPI",
-      "projectPath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API CRUD\\AspNetCoreWebAPI\\AspNetCoreWebAPI\\AspNetCoreWebAPI.csproj",
+      "projectPath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API-REST\\AspNetCoreWebAPI\\AspNetCoreWebAPI.csproj",
       "packagesPath": "C:\\Users\\thiag\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API CRUD\\AspNetCoreWebAPI\\AspNetCoreWebAPI\\obj\\",
+      "outputPath": "C:\\Users\\thiag\\Desktop\\FACULDADE\\ADID6\\API-REST\\AspNetCoreWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\thiag\\AppData\\Roaming\\NuGet\\NuGet.Config",

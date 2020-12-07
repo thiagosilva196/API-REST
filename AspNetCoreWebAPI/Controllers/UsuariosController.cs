@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCoreWebAPI.Data;
 using AspNetCoreWebAPI.Model;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -13,17 +14,20 @@ namespace AspNetCoreWebAPI.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
-        List<Usuario> _oUsuarios = new List<Usuario>()
+        private readonly APIContext _context;
+
+        public UsuariosController(APIContext context)
         {
-            new Usuario() { Id = 1, Nome = "Pedro", Email = "pedro@gmail.com" },
-            new Usuario() { Id = 2, Nome = "Cirilo", Email = "cirilo@gmail.com" },
-            new Usuario() { Id = 3, Nome = "Maria Joaquina", Email = "maria.joaquina@gmail.com" },
-        };
+            _context = context;
+        }
 
         [HttpGet]
         public IActionResult Gets()
         {
-            if(_oUsuarios.Count == 0)
+            List<Usuario> _oUsuarios = new List<Usuario>();
+            _oUsuarios = _context.Usuario.ToList();
+
+            if (_oUsuarios.Count == 0)
             {
                 return NotFound("Nenhuma lista encontrada.");
             }
@@ -31,10 +35,12 @@ namespace AspNetCoreWebAPI.Controllers
         }
 
         [HttpGet("GetUsuario")]
-        public IActionResult Get(int id)
+        public IActionResult GetById(int id)
         {
-            var oUsuario = _oUsuarios.SingleOrDefault(x => x.Id == id);
-            if(oUsuario == null)
+            
+
+            var oUsuario = _context.Usuario.SingleOrDefault(x => x.Id == id);
+            if (oUsuario == null)
             {
                 return NotFound("Nenhum usuário encontrado.");
             }
@@ -42,10 +48,14 @@ namespace AspNetCoreWebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Save(Usuario oUsuario) 
+        public IActionResult Save(Usuario oUsuario)
         {
-            _oUsuarios.Add(oUsuario);
-            if(_oUsuarios.Count == 0)
+            List<Usuario> _oUsuarios = new List<Usuario>();
+            
+            _context.Update(oUsuario);
+            _context.SaveChanges();
+            _oUsuarios = _context.Usuario.ToList();
+            if (_oUsuarios.Count == 0)
             {
                 return NotFound("Nenhuma lista encontrada.");
             }
@@ -55,13 +65,15 @@ namespace AspNetCoreWebAPI.Controllers
         [HttpDelete]
         public IActionResult DeleteUsuario(int id)
         {
-            var oUsuario = _oUsuarios.SingleOrDefault(x => x.Id == id);
+            var oUsuario = _context.Usuario.SingleOrDefault(x => x.Id == id);
             if (oUsuario == null)
             {
                 return NotFound("Nenhum usuário encontrado.");
             }
-            _oUsuarios.Remove(oUsuario);
-
+            _context.Remove(oUsuario);
+            _context.SaveChanges();
+            List<Usuario> _oUsuarios = new List<Usuario>();
+            _oUsuarios = _context.Usuario.ToList();
             if (_oUsuarios.Count == 0)
             {
                 return NotFound("Nenhuma lista encontrada");
