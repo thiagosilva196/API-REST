@@ -1,0 +1,102 @@
+﻿@{
+    ViewBag.Title = "Usuario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<h2>Adicionar um Usuario</h2>
+<div class="form-group">
+    <label for="Nome">Id:</label>
+    <input id="txtUsuarioId" class="form-control" name="Id" />
+</div>
+<div class="form-group">
+    <label for="Nome">Nome:</label>
+    <input id="txtNomeUsuario" class="form-control" name="Nome" />
+</div>
+<div class="form-group">
+    <label for="Email">Email:</label>
+    <input id="txtEmailUsuario" class="form-control" name="Email" />
+</div>
+<div class="text-center panel-body">
+    <button id="btnSalvar" class="btn btn-sm btn-primary">Salvar</button>
+</div>
+
+<button onclick="GetAllUsers()" class="btn btn-primary">Carregar Usuarios</button>
+
+<br />
+
+<h2>Lista de Usuarios</h2>
+<table id="tblUsuarios" class="table table-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>  
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+    });
+
+    function GetAllUsers() {
+        $.getJSON("/Usuarios/GetAllUsers", function (usuarios) {
+            $("#tblUsuarios tbody tr").remove();
+            $.map(usuarios, function (usuario) {
+                $("#tblUsuarios tbody").append("<tr>"
+                    + " <td>" + usuario.id + "</td>"
+                    + " <td>" + usuario.nome + "</td>"
+                    + " <td>" + usuario.email + "</td>"
+                    + " <td>"
+                    + "      <button class='btn-success' onclick='Edit(" + usuario.id + ")' style='margin-right:5px;'>Editar</button>"
+                    + "      <button class='btn-danger' onclick='Delete(" + usuario.id + ")'>Excluir</button>"
+                    + " </td> "
+                    + " </tr> ");
+            });
+        });
+    }
+
+    function Edit(usuarioId) {
+        if (usuarioId > 0) {
+            $.getJSON("/Usuarios/GetById?usuarioId=" + usuarioId, function (usuarios) {
+                $('#txtUsuarioId').val(usuario.id);
+                $('#txtNomeUsuario').val(usuario.nome);
+                $('#txtEmailUsuario').val(usuario.email);
+            });
+        }
+    }
+
+    function Delete(usuarioId) {
+        if (usuarioId > 0) {
+            $.ajax({
+                url: '/Usuarios/Delete?usuarioId=' + usuarioId,
+                type: 'DELETE',
+                dataType: 'json',
+                success: function (data) {
+                },
+                error: function (ex) {
+                    console.log('Erro na Operação');
+                }
+            });
+        }
+    }
+
+    $("#btnSalvar").click(function () {
+        var oUsuario = {
+            Id: $("#txtUsuarioId").val(),
+            Nome: $("#txtNomeUsuario").val(),
+            Email: $("#txtEmailUsuario").val()
+        }
+        $.post("/Usuarios/AddUpdateUser", oUsuario)
+            .done(function (data) {
+                GetAllUsers
+            });
+    });
+
+</script>
